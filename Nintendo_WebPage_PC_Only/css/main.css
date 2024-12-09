@@ -12,6 +12,8 @@ body {
 /* Header */
 header {
   padding-top: 24px;
+  width: 100%;
+  min-width: max-content;
   height: 700px;
   background-image: url(../images/key-visual.jpg);
   background-repeat: no-repeat;
@@ -163,6 +165,8 @@ header .img_deco button a {
 /* Contents */
 .card_box {
   /* background-color: #dcdcdc; */
+  width: 100%;
+  min-width: max-content;
   background: linear-gradient(to bottom, #e80000, #ffffff);
 }
 
@@ -303,6 +307,7 @@ header .img_deco button a {
 /* Article MOV */
 .mov {
   width: 100%;
+  min-width: 1280px;
   height: 560px;
   background-image: url(../images/mov_back.png);
   background-repeat: no-repeat;
@@ -421,113 +426,118 @@ header .img_deco button a {
 
 /* E-shop Section */
 .e_shop_banner {
-  background-color: #FF7D01;
+  width: 100%;
+  min-width: 1280px;
+  background-color: #ff7d01;
   color: #fff;
 }
-.e_shop_banner .banner_container{
+.e_shop_banner .banner_container {
   padding: 40px 10px 10px 10px;
 }
-.e_shop_banner h2{
+.e_shop_banner h2 {
   font-size: 1.5rem;
   font-weight: 550;
   margin-bottom: 25px;
 }
 
-.e_shop_banner .banner_container::after{
+.e_shop_banner .banner_container::after {
   clear: both;
   content: "";
   display: block;
 }
-.e_shop_banner .banner_container .banner_text{
+.e_shop_banner .banner_container .banner_text {
   float: left;
 }
-.e_shop_banner .banner_container .banner_img{
+.e_shop_banner .banner_container .banner_img {
   text-align: right;
   float: right;
 }
-.e_shop_banner .banner_container .banner_img .amibo_and_myNintendo{
+.e_shop_banner .banner_container .banner_img .amibo_and_myNintendo {
   margin-top: 10px;
 }
-.e_shop_banner .banner_container .banner_img .amibo_and_myNintendo img{
+.e_shop_banner .banner_container .banner_img .amibo_and_myNintendo img {
   border-radius: 0.5rem;
   margin-left: 10px;
 }
-
 
 /* Section FAQ And Influencer saying */
 .faq_saying {
   padding-top: 70px;
   padding-bottom: 130px;
   background-color: #dddddd;
+  width: 100%;
+  min-width: 1280px;
   /* height: 90vh; */
 }
 
-.faq_saying h2{
+.faq_saying h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 34px;
 }
 
-.faq_saying_container::after{
+.faq_saying_container::after {
   clear: both;
   content: "";
   display: block;
 }
-.faq_saying .faq{
+.faq_saying .faq {
   width: 550px;
   float: left;
 }
 
-.faq_saying .faq li{
+.faq_saying .faq li {
   cursor: pointer;
   border-bottom: 1px solid #000000;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .faq_saying h3 {
-  font-size: 1.25rem;
-  font-weight: 550;
-  margin-bottom: 25px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
-.faq_saying .faq i{
+.faq_saying .faq i {
+  font-size: 1rem;
+  font-weight: 550;
   transition: all 0.3s linear;
 }
-.faq_saying .answer{
+.faq_saying .answer {
   margin-bottom: 10px;
   line-height: 1.2;
   display: none;
 }
-.faq_saying .faq h5{
+.faq_saying .faq h5 {
   text-align: right;
   font-weight: 1.25rem;
   font-weight: 550;
   margin-top: 20px;
 }
 
-.faq_saying .saying{
+.faq_saying .saying {
   width: 550px;
   float: right;
 }
 
-.faq_saying .influencer_card_container{
+.faq_saying .influencer_card_container {
   width: 100%;
-  height: 500px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
+  gap: 3rem;
 }
 
-.faq_saying .saying h3{
+.faq_saying .saying h3 {
   margin-bottom: 10px;
 }
 
-.faq_saying .saying img{
+.faq_saying .saying img {
   border-radius: 50%;
   margin-right: 30px;
 }
-.faq_saying .saying .influencer_card{
+.faq_saying .saying .influencer_card {
   display: flex;
   flex-flow: row nowrap;
   justify-content: start;
@@ -536,6 +546,8 @@ header .img_deco button a {
 /* Footer */
 footer {
   /* height: 437px; */
+  width: 100%;
+  min-width: 1280px;
   background-color: #010101;
   color: #969696;
   padding-top: 100px;
@@ -561,15 +573,15 @@ footer {
   display: inline-block;
   margin-right: 15px;
 }
-.footer_logo .sns img{
+.footer_logo .sns img {
   border-radius: 2px;
 }
 
-footer dl dt{
+footer dl dt {
   padding-bottom: 20px;
   border-bottom: 1px solid #fff;
 }
-footer .footer_logo dt{
+footer .footer_logo dt {
   padding-bottom: 0;
   border: none;
 }
@@ -635,7 +647,6 @@ footer .footer_logo dt{
   margin-bottom: 20px;
 }
 
-
 .footer_software dd a:hover {
   color: #fe7c0a;
 }
@@ -650,4 +661,21 @@ footer .footer_logo dt{
   text-align: center;
   clear: both;
   padding-bottom: 20px;
+}
+
+/* Custom alert */
+#alert {
+  position: fixed;
+  left: 50%;
+  top: 15%;
+  z-index: 1000;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  display: none;
+  color: #fff;
+  font-weight: 550;
+  padding: 1rem;
+  text-align: center;
+  line-height: 1.5;
 }

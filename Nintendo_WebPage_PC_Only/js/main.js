@@ -26,4 +26,13 @@ $(()=>{
         $('.answer').stop().slideUp(100);
         $('.answer').eq(idx).stop().slideToggle(200);
     })
+
+    // # 
+    $('a[href="#"]').click(function(e){
+        e.preventDefault()
+        $('#alert').stop().fadeIn(800);
+        setTimeout(function(){
+            $('#alert').stop().fadeOut(1000);
+        },3000)
+    })
 })
